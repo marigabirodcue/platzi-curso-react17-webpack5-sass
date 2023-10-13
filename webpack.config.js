@@ -7,7 +7,7 @@ module.exports = {
     output:{
         path: path.resolve(__dirname, 'dist'),
         filename:'bundle.js',
-        publicPath: '/',
+        publicPath: './',
     },
     mode: 'development',
     resolve:{
@@ -65,7 +65,7 @@ module.exports = {
         }),
     ],
     devServer: {
-      //  allowedHosts: path.join(__dirname, 'dist'),
+        allowedHosts: path.join(__dirname, 'dist'),
        // compress: true,
         historyApiFallback: true,
        // port: 3005,

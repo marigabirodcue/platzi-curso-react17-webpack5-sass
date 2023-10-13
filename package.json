@@ -1,14 +1,14 @@
 {
-  "name": "react-cake-shop",
+  "name": "react-shop",
   "version": "1.0.0",
   "description": "react shop",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --progress",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d dist"
   },
   "keywords": [
     "react",
@@ -40,5 +40,5 @@
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1"
   },
-  "homepage": "https://marigabirodcue.github.io/platzi-curso-react-basico"
+  "homepage": "https://marigabirodcue.github.io/platzi-curso-react17-webpack5-sass"
 }
