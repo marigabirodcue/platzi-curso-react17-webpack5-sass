@@ -1,6 +1,7 @@
 {
+  "homepage": "https://marigabirodcue.github.io/platzi-curso-react17-webpack5-sass",
   "name": "react-shop",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "react shop",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +9,7 @@
     "start": "webpack serve --open",
     "build": "webpack --mode production --progress",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "react",
@@ -39,6 +40,5 @@
     "sass": "^1.52.3",
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1"
-  },
-  "homepage": "https://marigabirodcue.github.io/platzi-curso-react17-webpack5-sass"
+  }
 }

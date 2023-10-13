@@ -1,6 +1,6 @@
 import React from 'react';
 import AppContext from '@context/AppContext';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from '@containers/Layout';
 import Login from '@pages/Login';
 import PasswordRecovery from '@pages/PasswordRecovery';
@@ -19,7 +19,7 @@ const App = () => {
     const initialState = useInitialState();
     return (
         <AppContext.Provider value={initialState}>
-            <BrowserRouter basename="/platzi-curso-react17-webpack5-sass">
+            <HashRouter>
                 <Layout>
                     <Routes>
                         <Route path="/" element={<Home />} />
@@ -34,7 +34,7 @@ const App = () => {
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>
-            </BrowserRouter>
+            </HashRouter>
         </AppContext.Provider>
     );
 };
